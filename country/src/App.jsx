@@ -4,13 +4,13 @@ import Home from "./pages/home"
 import Country from"./pages/country"
 import Contact from "./pages/contact"
 import { AppLayout } from "./components/Layout/AppLayout";
-// import { ErrorPage } from "./pages/errorPage";
+import ErrorPage from "./pages/errorPage";
 import './App.css'
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
-    // errorElement:<ErrorPage/>,
+    errorElement:<ErrorPage/>,
     children: [
       {
         path: "/",

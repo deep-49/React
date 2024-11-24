@@ -375,6 +375,7 @@ ul {
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
+  padding: 5px;
 }
 .footer-menu li:hover a {
   color: #3a4ed5;

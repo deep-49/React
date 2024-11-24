@@ -1,4 +1,4 @@
-
+import countryFacts from "../api/countryData.json"
 export default function About (){
     return(<>
        <section className="section-about container">
@@ -8,25 +8,40 @@ export default function About (){
             we are proud of
         </h2>
         <div className="gradient-cards">
-            <div className="card">
-                <div className="container bg-blue-box">
+          {
+            countryFacts.map((country)=>{
+              const {id,countryName,capital,population,interestingFact}=country;
+              return(
+                <div className="card"key={id}>
+                <div className="container-card  bg-blue-box">
                 <p className="card-title"></p>
                 <p>
-                  <span className="card-description">Capital:</span>
+                  <span className="card-description"></span>{countryName}
                   
                 </p>
                 <p>
-                  <span className="card-description">Population:</span>
+                  <span className="card-description">Capital:</span>{capital}
+                  
+                </p>
+                <p>
+                  <span className="card-description">Population:</span>{population}
                  
                 </p>
                 <p>
-                  <span className="card-description">Interesting Fact:</span>
+                  <span className="card-description">Interesting Fact:</span>{interestingFact}
 
                 </p>
              </div>
                 
             </div>
-        </div>
+        
+
+              )
+           
+            })
+        
+          }
+            </div>
 
        </section>
 

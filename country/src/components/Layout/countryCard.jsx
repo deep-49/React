@@ -1,15 +1,17 @@
-import { NavLink } from "react-router-dom";
+ import { NavLink } from "react-router-dom";
 
 export const CountryCard = ({ country }) => {
   const { flags, name, population, region, capital } = country;
   return (
+    
     <li className="country-card  card ">
-      <div className="container-card bg-white-box">
-        <img src={flags.svg} alt={flags.alt} />
+     <div className="container-card bg-white-box">
+     <img src={flags.svg} alt={flags.alt} />
 
-        <div className="countryInfo">
-          <p className="card-title">
-            {name.common.length > 10
+      <div className="countryInfo">
+       <p className="card-title">
+        {/* to make name shorter */}
+        {name.common.length > 10
               ? name.common.slice(0, 10) + "..."
               : name.common}
           </p>

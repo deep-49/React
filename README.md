@@ -31,7 +31,7 @@ The **World Atlas** project is a comprehensive tool designed to provide detailed
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com//country.git
+   git clone https://github.com/deep-49/React.git
    ```
 
 2. Navigate to the project directory:

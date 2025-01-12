@@ -5,8 +5,7 @@
 }
 
 :root {
-  --bg-color:#202020;
-
+  --bg-color: #202020;
 }
 
 html {
@@ -78,10 +77,8 @@ button {
 /* Layout  */
 
 .container {
-  max-width: 100%;
+  max-width: 140rem;
   margin: auto;
-  padding: 0 1.6rem;
-
 }
 
 .grid {
@@ -215,9 +212,7 @@ nav ul {
 /* About Section  */
 
 .section-about {
-  margin: 0  auto 9rem auto;
- 
-  
+  margin: 0 auto 9rem auto;
 }
 
 .gradient-cards {
@@ -226,7 +221,7 @@ nav ul {
   gap: 3.2rem;
 }
 
-@media screen and (max-width: 100%) {
+@media screen and (max-width: 991px) {
   .gradient-cards {
     grid-template-columns: 1fr;
   }
@@ -393,25 +388,21 @@ ul {
 country Card 
 ------------------ */
 
-
 .country-card {
   margin-top: 3.2rem;
 }
 .country-section {
   margin: 6.4rem auto 9.6rem auto;
-  
   & .grid {
     gap: 3.2rem;
     max-width: 132rem;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
   }
 
   & img {
     width: 100%;
     max-width: 50rem;
-    height: auto; 
+    height: 16rem;
   }
 }
 
